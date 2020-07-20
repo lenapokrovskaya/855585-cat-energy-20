@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Покровская](https://up.htmlacademy.ru/adaptive/20/user/855585).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Полозова](https://up.htmlacademy.ru/adaptive/20/user/258631).
 
 ---
 
