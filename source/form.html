@@ -19,17 +19,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="index.html">
+            <a class="site-list__link" href="index.html">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a href="catalog.html">
+            <a class="site-list__link" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a href="">
+            <a class="site-list__link" href="">
               Подбор программы
             </a>
           </li>
@@ -38,75 +38,75 @@
     </nav>
   </header>
   <main>
-    <section class="questionnaire form">
+    <section class="questionnaire form container">
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset class="form__item">
           <legend class="form__title">Подбор программы</legend>
           <p class="form__description">Заполните анкету, и мы подберем
             программу питания для вашего кота</p>
           <p class="form__name">
-            <label for="pet-name" required>Имя:&#42;</label>
-            <input type="text" name="name" id="pet-name" placeholder="Барсик">
+            <label class="form__label-name" for="pet-name" required>Имя:&#42;</label>
+            <input class="form__input" type="text" name="name" id="pet-name" placeholder="Барсик">
           </p>
           <p class="form__weight">
-            <label for="pet-weight" required>Вес (кг):&#42;</label>
-            <input type="text" name="weight" id="pet-weight" placeholder="7">
+            <label class="form__label-weight" for="pet-weight" required>Вес (кг):&#42;</label>
+            <input class="form__input" type="text" name="weight" id="pet-weight" placeholder="7">
           </p>
           <p class="form__age">
-            <label for="pet-age">Возраст (лет):</label>
-            <input type="text" name="age" id="pet-age" placeholder="7">
+            <label class="form__label-age" for="pet-age">Возраст (лет):</label>
+            <input class="form__input" type="text" name="age" id="pet-age" placeholder="7">
           </p>
         </fieldset>
         <fieldset class="form__radio">
           <ul class="form__radio-list">
             <li class="form__radio-item">
-              <label for="slim">Похудение</label>
               <input type="radio" name="goal" id="slim" value="slim" checked>
+              <label for="slim">Похудение</label>
             </li>
             <li class="form__radio-item">
-              <label for="mass">Набор массы</label>
               <input type="radio" name="goal" id="mass" value="mass">
+              <label for="mass">Набор массы</label>
             </li>
             <li class="form__radio-item">
-              <label for="advice">Не знаю (нужен ваш совет)</label>
               <input type="radio" name="goal" id="advice">
+              <label for="advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__contacts">
           <legend class="form__contacts-title">Контактные данные (владельца кота)</legend>
           <p class="form__contacts-item">
-            <label for="your-mail" required>E-mail:&#42;</label>
-            <input type="email" name="mail" id="your-mail" placeholder="kuklachev@gmail.com">
+            <label class="form__label-mail" for="your-mail" required>E-mail:&#42;</label>
+            <input class="form__input-contacts" type="email" name="mail" id="your-mail" placeholder="kuklachev@gmail.com">
           </p>
           <p class="form__contacts-item">
-            <label for="your-phone" required>Телефон:&#42;</label>
-            <input type="tel" name="phone" id="your-phone" placeholder="8 (960) 900-60-90">
+            <label class="form__label-phone" for="your-phone" required>Телефон:&#42;</label>
+            <input class="form__input-contacts" type="tel" name="phone" id="your-phone" placeholder="8 (960) 900-60-90">
           </p>
         </fieldset>
         <fieldset class="form__comment">
           <legend class="form__comment-title">Комментарий</legend>
           <label class="visually-hidden" for="text-comment">Коментарий</label>
-          <textarea id="text-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="form__comment-text" id="text-comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__checkbox">
           <legend class="form__checkbox-title">Дополнительно</legend>
           <ul class="form__checkbox-list">
             <li class="form__checkbox-item">
-              <label for="add-sweetener">Cахарозаменитель</label>
               <input type="checkbox" name="sweetener" id="add-sweetener" checked>
+              <label for="add-sweetener">Cахарозаменитель</label>
             </li>
             <li class="form__checkbox-item">
-              <label for="add-water">Питьевая вода</label>
               <input type="checkbox" name="water" id="add-water">
+              <label for="add-water">Питьевая вода</label>
             </li>
             <li class="form__checkbox-item">
-              <label for="add-milk">Молоко</label>
               <input type="checkbox" name="milk" id="add-milk">
+              <label for="add-milk">Молоко</label>
             </li>
             <li class="form__checkbox-item">
-              <label for="add-vitamins">Витамины</label>
               <input type="checkbox" name="vitamins" id="add-vitamins">
+              <label for="add-vitamins">Витамины</label>
             </li>
           </ul>
         </fieldset>
@@ -115,17 +115,19 @@
       </form>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
-      <p class="contacts__description">
+      <div class="contacts__block contacts__block-form container">
+        <h2 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h2>
+        <p class="contacts__description">
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </p>
+        </p>
+      </div>
       <iframe class="contacts__map"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
         width="320" height="362" allowfullscreen
         title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__logo" href="">
       <img src="https://via.placeholder.com/" width="128" height="24" alt="Интернет-магазин Кэт энерджи">
     </a>
@@ -150,10 +152,10 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-      </a>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
         HTML Academy
+      </a>
+      <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
       </a>
     </div>
   </footer>
