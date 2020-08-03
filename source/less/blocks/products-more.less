@@ -1,5 +1,6 @@
 .products-more {
   padding-top: 80px;
+  text-align: center;
 }
 
 .products-more__title {
@@ -10,20 +11,38 @@
   text-align: center;
   margin: 0;
   margin-bottom: 8px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .products-more__description {
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
   color: @special-dark-grey;
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+  }
 }
 
 .products-more__button-show {
   width: 279px;
   background-color: @basic-grey;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 9.5px;
+    padding-bottom: 9.5px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 168px;
+  }
 }

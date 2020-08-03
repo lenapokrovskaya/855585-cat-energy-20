@@ -4,6 +4,14 @@
   padding-bottom: 25px;
 }
 
+@media (min-width: @desktop-width) {
+  .form__item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+}
+
 .form__title {
   font-size: 36px;
   line-height: 36px;
