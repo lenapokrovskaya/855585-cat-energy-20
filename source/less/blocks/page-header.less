@@ -1,0 +1,30 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 709px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+
+.page-header__logo {
+  height: 66px;
+  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline-offset: -5px;
+  padding-top: 12px;
+
+  @media (min-width: @tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 59px;
+  }
+}

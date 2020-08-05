@@ -4,18 +4,13 @@
   padding-bottom: 25px;
 }
 
-.form__title {
-  font-size: 36px;
-  line-height: 36px;
-  margin-bottom: 37px;
-}
-
-.form__description {
-  font-size: 14px;
-  line-height: 18px;
-  margin: 0;
-  text-transform: uppercase;
-  margin-bottom: 39px;
+@media (min-width: @desktop-width) {
+  .form__item-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 80px;
+  }
 }
 
 .form__name {
@@ -27,6 +22,11 @@
   margin-bottom: 13px;
   text-transform: uppercase;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__weight {
@@ -38,6 +38,11 @@
   margin-bottom: 13px;
   text-transform: uppercase;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__age {
@@ -48,6 +53,11 @@
   margin: 0;
   text-transform: uppercase;
   color: @special-dark-grey;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input {
@@ -66,6 +76,11 @@
   padding-bottom: 15px;
   padding-right: 15px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__input::placeholder {
@@ -75,14 +90,25 @@
 .form__label-name {
   width: 38px;
   margin-right: 14px;
+  align-self: center;
 }
 
 .form__label-weight {
   width: 85px;
   margin-right: 14px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 90px;
+  }
 }
 
 .form__label-age {
   width: 160px;
   margin-right: 14px;
+  align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 180px;
+  }
 }

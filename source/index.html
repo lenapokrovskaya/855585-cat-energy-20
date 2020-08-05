@@ -3,14 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo" href="#">
-      <img src="https://via.placeholder.com/" width="202" height="60" alt="Интернет-магазин Кэт энерджи">
+      <img src="img/logo-mobile.svg" width="190" height="38" alt="Интернет-магазин Кэт энерджи">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -19,17 +20,17 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__link" href="#">
+            <a class="site-list__link site-list__link-main-desk" href="#">
               Главная
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">
+            <a class="site-list__link site-list__link-main-desk" href="catalog.html">
               Каталог продукции
             </a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">
+            <a class="site-list__link site-list__link-main-desk" href="form.html">
               Подбор программы
             </a>
           </li>
@@ -97,26 +98,28 @@
         не менял своих привычек и по-прежнему спит по 16 часов в день.
       </p>
       <div class="demo__list stats">
-        <div class="stats__item">
-          <div class="stats__number">
-            5 кг
+        <div class="stats__item-wrapper">
+          <div class="stats__item">
+            <div class="stats__number">
+              5 кг
+            </div>
+            <span class="stats__description">
+              Снижение веса
+            </span>
           </div>
-          <span class="stats__description">
-            Снижение веса
-          </span>
-        </div>
-        <div class="stats__item">
-          <div class="stats__number">
-            60 дней
+          <div class="stats__item">
+            <div class="stats__number">
+              60 дней
+            </div>
+            <span class="stats__description">
+              Затрачено времени
+            </span>
           </div>
-          <span class="stats__description">
-            Затрачено времени
-          </span>
         </div>
+        <p class="stats__value">
+          Затраты на питание: 15 000 руб.
+        </p>
       </div>
-      <p class="stats__value">
-        Затраты на питание: 15 000 руб.
-      </p>
       <div class="demo__slider slider">
         <ul class="slider__list">
           <li class="slider__item">
@@ -145,32 +148,31 @@
         </p>
       </div>
       <iframe class="contacts__map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
-        width="320" height="362" allowfullscreen
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen
         title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </section>
     <!--Конец красной зоны (в работе)-->
   </main>
   <footer class="page-footer container">
     <a class="page-footer__logo" href="#">
-      <img src="https://via.placeholder.com/" width="128" height="24" alt="Интернет-магазин Кэт энерджи">
+      <img src="img/logo-footer.svg" width="128" height="24" alt="Интернет-магазин Кэт энерджи">
     </a>
     <div class="page-footer__social social">
       <h2 class="visually-hidden">Социальные сети</h2>
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="#">
-            <span class="visually-hidden">Вконтакте</span>
+            <span>Вконтакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--ig" href="#">
-            <span class="visually-hidden">Инстаграм</span>
+            <span>Инстаграм</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--fb" href="#">
-            <span class="visually-hidden">Фейсбук</span>
+            <span>Фейсбук</span>
           </a>
         </li>
       </ul>

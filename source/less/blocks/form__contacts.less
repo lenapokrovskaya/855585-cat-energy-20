@@ -4,12 +4,29 @@
   margin: 0;
 }
 
+.form__contacts-wrapper {
+  border: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 78px;
+  }
+}
+
 .form__contacts-title {
   font-size: 24px;
   line-height: 26px;
   padding: 0;
   margin-top: 26px;
   margin-bottom: 26px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .form__contacts-item {
@@ -21,16 +38,23 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__label-phone {
   width: 95px;
   margin-right: 14px;
+  align-self: center;
 }
 
 .form__label-mail {
-  width: 70px;
+  width: 80px;
   margin-right: 14px;
+  align-self: center;
 }
 
 .form__input-contacts {
@@ -49,4 +73,9 @@
   padding-bottom: 15px;
   padding-right: 15px;
   text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
