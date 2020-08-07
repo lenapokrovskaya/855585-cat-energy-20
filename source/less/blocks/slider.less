@@ -1,5 +1,55 @@
 .slider__list {
   margin: 0;
   padding: 0;
+  list-style: none;
   margin-bottom: 23px;
+  background-color: red;
+}
+
+.slider__img {
+  display: block;
+}
+
+.slider__img-before {
+  background-image: url("../img/before-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.slider__slide {
+  display: none;
+
+  &--current {
+    display: block;
+  }
+}
+
+
+.slider__controls {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 228px;
+}
+
+.slider__button {
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.slider__bar {
+  width: 84px;
+  background-color: @basic-white;
+  border: 1px solid @special-grey;
+  border-radius: 6px;
+}
+
+.slider__range {
+  margin: 0;
+  width: 100%;
 }
