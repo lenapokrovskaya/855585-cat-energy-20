@@ -8,13 +8,22 @@
   text-transform: uppercase;
   background-color: @basic-green;
   color: @basic-white;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   outline: none;
   border: none;
 
   @media (min-width: @tablet-width) {
     padding-top: 27px;
     padding-bottom: 27px;
+  }
+
+  &:hover {
+    background-color: @basic-green-2;
+  }
+
+  &:active,
+  &:focus {
+    color: fade(@basic-white, 30%);
   }
 }

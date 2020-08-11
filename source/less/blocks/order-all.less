@@ -1,8 +1,24 @@
 .order-all {
+  position: relative;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }
 
+.order-all__icon {
+  position: absolute;
+  width: 78px;
+  height: 80px;
+  top: 58px;
+  left: 101px;
+}
+
+.order-all__icon path {
+  fill: @basic-white;
+}
 
 .order-all__description {
   width: 161px;

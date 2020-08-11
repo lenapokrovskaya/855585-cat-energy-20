@@ -1,19 +1,40 @@
+.slider-wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+}
+
 .slider__list {
   margin: 0;
   padding: 0;
   list-style: none;
   margin-bottom: 23px;
-  background-color: red;
 }
 
-.slider__img {
-  display: block;
+@media (min-width: @tablet-width) {
+  .slider__img {
+    width: 708px;
+    height: 550px;
+  }
 }
+
+@media (min-width: @desktop-width) {
+  .slider__img {
+    width: 690px;
+    height: 536px;
+  }
+}
+
 
 .slider__img-before {
-  background-image: url("../img/before-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  position: relative;
+  right: 20px;
+  width: 311px;
+  height: 232px;
 }
 
 .slider__slide {

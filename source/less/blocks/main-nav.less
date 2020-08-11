@@ -1,7 +1,5 @@
 .main-nav {
   width: auto;
-  outline: 5px solid rgba(0, 255, 0, 0.8);
-  outline-offset: -5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,7 +24,7 @@
 .main-nav__toggle {
   position: absolute;
   top: 25px;
-  right: 40px;
+  right: 20px;
   z-index: 2;
   display: block;
   width: 24px;
@@ -74,11 +72,15 @@
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
   top: 23px;
-  right: 43px;
+  right: 20px;
   width: 18px;
   height: 18;
 
