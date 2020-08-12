@@ -3,4 +3,38 @@
   font-size: 16px;
   line-height: 18px;
   color: @special-dark-grey;
+
+  &:hover {
+    color: @basic-green;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+
+  & path {
+    width: 27px;
+    height: 34px;
+    fill: @special-grey-3;
+  }
+}
+
+.copyright__logo {
+  width: 27px;
+  height: 34px;
+
+  &:hover path {
+    fill: @basic-green;
+  }
+
+  &:active path,
+  &:focus path {
+    opacity: 0.3;
+  }
 }

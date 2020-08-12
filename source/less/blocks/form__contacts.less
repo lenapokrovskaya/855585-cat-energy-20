@@ -2,6 +2,10 @@
   border: none;
   padding: 0;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 
 .form__contacts-wrapper {
@@ -9,7 +13,15 @@
   padding: 0;
   margin: 0;
 
+  @media (min-width: @tablet-width) {
+    width: 630px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+
   @media (min-width: @desktop-width) {
+    width: auto;
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 78px;
@@ -17,19 +29,61 @@
 }
 
 .form__contacts-title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   padding: 0;
-  margin-top: 26px;
-  margin-bottom: 26px;
+  margin-bottom: 31px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 2px;
+    top: 15px;
+    right: -20px;
+    background-color: @basic-green;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
+    padding-left: 40px;
+    margin-bottom: 76px;
+
+    &::after {
+      width: 145px;
+      left: 575px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 2px;
+      top: 15px;
+      left: -30px;
+      background-color: @basic-green;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 0;
+
+    &::after {
+      width: 778px;
+      left: 552px;
+    }
+
+    &::before {
+      width: 70px;
+      left: -110px;
+    }
   }
 }
 
 .form__contacts-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -37,7 +91,7 @@
   color: @special-dark-grey;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: 13px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -46,15 +100,21 @@
 }
 
 .form__label-phone {
-  width: 95px;
-  margin-right: 14px;
+  width: 108px;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 120px;
+  }
 }
 
 .form__label-mail {
   width: 80px;
-  margin-right: 14px;
   align-self: center;
+
+  @media (min-width: @tablet-width) {
+    width: 95px;
+  }
 }
 
 .form__input-contacts {
@@ -68,11 +128,20 @@
   box-sizing: border-box;
   min-height: 45px;
   padding: 0;
-  padding-top: 13px;
+  padding-top: 12px;
   padding-left: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   padding-right: 15px;
   text-transform: uppercase;
+
+  &:hover {
+    border: 1px solid @special-grey;
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid @special-dark-grey;
+  }
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
