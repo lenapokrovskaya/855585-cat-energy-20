@@ -3,8 +3,14 @@
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
 
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
   @media (min-width: @desktop-width) {
     width: 245px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 }
 
@@ -32,4 +38,18 @@
   padding-left: 58px;
   padding-right: 61px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    padding-left: 423px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 184px;
+    padding-bottom: 42px;
+    padding-left: 43px;
+    padding-right: 41px;
+  }
 }
