@@ -1,37 +1,11 @@
 .form__item {
   border: none;
   padding: 0;
-  margin: 0;
-  padding-bottom: 42px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 75px;
-  }
-
-  @media (min-width: @desktop-width) {
-    padding-bottom: 47px;
-  }
-}
-
-
-.form__data {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-@media (min-width: @tablet-width) {
-  .form__item-wrapper {
-    width: 630px;
-    margin: 0 auto;
-    padding: 0 40px;
-  }
+  padding-bottom: 25px;
 }
 
 @media (min-width: @desktop-width) {
   .form__item-wrapper {
-    width: auto;
-    padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -52,7 +26,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
   }
 }
 
@@ -69,7 +42,6 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
   }
 }
 
@@ -85,48 +57,58 @@
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 20px;
   }
+}
+
+.form__input {
+  width: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: transparent;
+  border: 1px solid @special-border-grey;
+  outline: none;
+  box-sizing: border-box;
+  min-height: 45px;
+  padding: 0;
+  padding-top: 13px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.form__input::placeholder {
+  color: @special-dark-grey;
 }
 
 .form__label-name {
   width: 38px;
   margin-right: 14px;
   align-self: center;
-
-  @media (min-width: @tablet-width) {
-    width: 50px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 55px;
-  }
 }
 
 .form__label-weight {
-  width: 86px;
+  width: 85px;
   margin-right: 14px;
   align-self: center;
 
   @media (min-width: @tablet-width) {
-    width: 88px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 95px;
+    width: 90px;
   }
 }
 
 .form__label-age {
-  width: 166px;
+  width: 160px;
   margin-right: 14px;
   align-self: center;
 
   @media (min-width: @tablet-width) {
-    width: 150px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 160px;
+    width: 180px;
   }
 }
