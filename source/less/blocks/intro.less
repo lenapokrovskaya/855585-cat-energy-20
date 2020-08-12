@@ -4,15 +4,6 @@
   text-align: center;
   padding-top: 27px;
 
-
-  @media (min-width: @tablet-width) {
-    position: relative;
-    background-color: @basic-white;
-    color: @basic-black;
-    text-align: left;
-    padding-top: 47px;
-  }
-
   &::before {
     content: "";
     position: absolute;
@@ -25,14 +16,28 @@
     z-index: -1;
   }
 
+  @media (min-width: @tablet-width) {
+    position: relative;
+    background-image: none;
+    color: @basic-black;
+    text-align: left;
+    padding-top: 47px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   @media (min-width: @desktop-width) {
     padding-top: 95px;
 
     &::before {
+      display: block;
       top: -130px;
       left: 720px;
       width: 720px;
       height: 696px;
+      background: none;
       background-image: url("../img/index-background-desktop@1x.jpg");
     }
   }
