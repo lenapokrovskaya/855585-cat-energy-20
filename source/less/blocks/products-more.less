@@ -1,6 +1,17 @@
 .products-more {
   padding-top: 80px;
+  padding-bottom: 24px;
   text-align: center;
+
+  @media (max-width: @mobile-width-only) {
+    border-bottom: 1px solid @special-grey-2;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-top: 159px;
+    padding-bottom: 36px;
+    border: 2px solid @basic-grey;
+  }
 }
 
 .products-more__title {
@@ -13,8 +24,17 @@
   margin-bottom: 8px;
 
   @media (min-width: @tablet-width) {
+    width: 134px;
     font-size: 20px;
     line-height: 22px;
+    padding-right: 92px;
+    padding-left: 94px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 55px;
+    padding-left: 54px;
   }
 }
 
@@ -27,22 +47,56 @@
   margin-bottom: 21px;
 
   @media (min-width: @tablet-width) {
+    width: 167px;
     font-size: 16px;
     line-height: 18px;
+    padding-right: 76px;
+    padding-left: 77px;
+    margin-bottom: 87px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 38px;
+    padding-left: 38px;
   }
 }
 
 .products-more__button-show {
   width: 279px;
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  vertical-align: baseline;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
   background-color: @basic-grey;
   color: @special-dark-grey;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  outline: none;
+  border: none;
 
-  @media (min-width: @tablet-width) {
-    padding-top: 9.5px;
-    padding-bottom: 9.5px;
+
+  &:hover {
+    background-color: @special-grey-2;
+  }
+
+  &:active,
+  &:focus {
+    color: fade(@special-dark-grey, 30%);
   }
 
   @media (min-width: @tablet-width) {
-    width: 168px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 249px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 169px;
   }
 }
