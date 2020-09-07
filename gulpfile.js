@@ -7,7 +7,9 @@ const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const rename = require("gulp-rename");
 const svgstore = require("gulp-svgstore");
+const htmlmin = require('gulp-htmlmin');
 const csso = require("gulp-csso");
+const uglify = require('gulp-uglify');
 const webp = require("gulp-webp");
 const imagemin = require("gulp-imagemin");
 const del = require("del");
@@ -32,13 +34,30 @@ const styles = () => {
 }
 exports.styles = styles;
 
-
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(gulp.dest("./build"))
     .pipe(sync.stream());
 }
 exports.html = html;
+
+//HTML min
+
+const minify = () => {
+  return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest("./build"));
+}
+exports.minify = minify;
+
+//JS min
+
+const compress = () => {
+  return gulp.src("source/js/script-main-nav.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("./build"));
+}
+exports.compress = compress;
 
 // Server
 
@@ -119,7 +138,7 @@ const clean = () => {
 }
 exports.clean = clean;
 
-const build = gulp.series(clean, copy, styles, images, sprite, html);
+const build = gulp.series(clean, copy, styles, minify, compress, images, sprite, html);
 exports.build = build;
 // Start
 exports.start = gulp.series(build, server, watcher);
