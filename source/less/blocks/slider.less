@@ -18,29 +18,27 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 23px;
-}
+  margin-bottom: 27px;
 
-@media (min-width: @tablet-width) {
-  .slider__img {
-    width: 708px;
-    height: 550px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 8px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .slider__img {
-    width: 690px;
-    height: 536px;
+.slider__img {
+  margin-left: -20px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 15px;
   }
-}
 
-
-.slider__img-before {
-  position: relative;
-  right: 20px;
-  width: 311px;
-  height: 232px;
+  @media (min-width: @desktop-width) {
+    margin-left: 20px;
+  }
 }
 
 .slider__slide {
@@ -54,10 +52,16 @@
 
 .slider__controls {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
+  align-items: center;
   width: 228px;
+  margin-left: 43px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 68px;
+    width: 590px;
+  }
 }
+
 
 .slider__button {
   font-family: inherit;
@@ -67,6 +71,20 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  border-bottom: 1px dotted @special-border-grey-3;
+
+  &:hover {
+    border-bottom: 1px solid @special-border-grey-3;
+  }
+
+  &:active {
+    border-bottom: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .slider__bar {
@@ -79,4 +97,55 @@
 .slider__range {
   margin: 0;
   width: 100%;
+}
+
+.slider__scale {
+  display: flex;
+  align-items: center;
+  padding-left: 4px;
+  margin-left: 18px;
+  margin-right: 16px;
+  width: 84px;
+  height: 14px;
+  border-radius: 6px;
+  background-color: @basic-white;
+  border: 1px solid @special-grey;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 428px;
+    height: 6px;
+    background-color: @special-grey;
+    border-color: @special-grey;
+    margin-left: 20px;
+    margin-right: 22px;
+  }
+}
+
+.slider__grip {
+  width: 35px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: @basic-green;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    margin-left: calc(50% - 17px);
+    width: 34px;
+    height: 34px;
+    background-image: radial-gradient(@basic-green 0, @basic-green  4px, @basic-white 5px, @basic-white 100%);
+    border: 1px solid @special-grey;
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.16);
+    box-sizing: border-box;
+  }
+
+  &:hover {
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.19);
+  }
+
+  &:active {
+    border: 1px solid @basic-green;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.2);
+  }
 }
