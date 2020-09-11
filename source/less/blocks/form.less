@@ -1,13 +1,15 @@
 .form {
-  padding-top: 27px;
+  padding-top: 26px;
+  border-top: 1px solid @special-grey;
 
   @media (min-width: @tablet-width) {
-    padding-top: 50px;
+    border-top: none;
+    padding-top: 65px;
     padding-bottom: 72px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-top: 57px;
+    padding-top: 77px;
     padding-bottom: 82px;
   }
 }
@@ -34,7 +36,7 @@
   line-height: 18px;
   margin: 0;
   text-transform: uppercase;
-  margin-bottom: 39px;
+  margin-bottom: 36px;
 
   @media (min-width: @tablet-width) {
     width: 323px;
@@ -44,7 +46,7 @@
     margin-bottom: 66px;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 0;
   }
 }
@@ -120,12 +122,20 @@
   right: 15px;
 }
 
+.form__input:focus + .form__icon-mail {
+  fill: @basic-green;
+}
+
 .form__icon-phone {
   position: absolute;
   width: 20px;
   height: 20px;
   top: 13px;
   right: 12px;
+}
+
+.form__input:focus + .form__icon-phone {
+  fill: @basic-green;
 }
 
 

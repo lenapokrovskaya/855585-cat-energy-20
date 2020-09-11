@@ -19,7 +19,7 @@
   @media (min-width: @tablet-width) {
     width: 171px;
     font-size: 20px;
-    line-height: 21px;
+    line-height: 25px;
   }
 
   @media (min-width: @desktop-width) {
@@ -40,10 +40,19 @@
     font-size: 16px;
     line-height: 20px;
     width: 159px;
+    text-align: right;
   }
 
   @media (min-width: @desktop-width) {
     width: 155px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__description-span {
+    display: block;
+    padding-top: 20px;
   }
 }
 
@@ -92,6 +101,7 @@
 
 .contacts__map {
   border: none;
+  width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 100%;

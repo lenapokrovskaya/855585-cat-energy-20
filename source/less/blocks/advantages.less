@@ -1,9 +1,9 @@
 .advantages {
   padding-top: 27px;
-  padding-bottom: 46px;
+  padding-bottom: 45px;
 
   @media (min-width: @tablet-width) {
-    padding-top: 47px;
+    padding-top: 43px;
     padding-bottom: 104px;
   }
 
@@ -31,7 +31,7 @@
 .advantages__list {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  row-gap: 26px;
+  row-gap: 24px;
   font-family: "Arial", "Tahoma", sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -184,11 +184,35 @@
     @media (min-width: @tablet-width) {
       width: 201px;
     }
+
+    &::after {
+      content: "1";
+      left: 117px;
+      display: block;
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: @basic-grey;
+      top: 87px;
+      z-index: -10;
+    }
   }
 
   &--2 {
     @media (min-width: @tablet-width) {
       width: 227px;
+    }
+
+    &::after {
+      content: "2";
+      left: 117px;
+      display: block;
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: @basic-grey;
+      top: 87px;
+      z-index: -10;
     }
   }
 
@@ -196,11 +220,35 @@
     @media (min-width: @tablet-width) {
       width: 209px;
     }
+
+    &::after {
+      content: "3";
+      left: 117px;
+      display: block;
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: @basic-grey;
+      top: 87px;
+      z-index: -10;
+    }
   }
 
   &--4 {
     @media (min-width: @tablet-width) {
       width: 245px;
+    }
+
+    &::after {
+      content: "4";
+      left: 117px;
+      display: block;
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 281px;
+      color: @basic-grey;
+      top: 87px;
+      z-index: -10;
     }
   }
 }
