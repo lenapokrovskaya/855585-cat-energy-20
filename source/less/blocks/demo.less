@@ -18,9 +18,22 @@
   }
 }
 
-@media (min-width: @desktop-width) {
-  .demo__wrapper {
+.demo__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
     display: flex;
+    justify-content: center;
+    width: 1220px;
+    padding: 0 110px;
+    margin-left: 0 auto;
   }
 }
 

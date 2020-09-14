@@ -44,7 +44,7 @@ exports.html = html;
 const server = done => {
   sync.init({
     server: {
-      baseDir: './build'
+      baseDir: "./build"
     },
     cors: true,
     notify: false,

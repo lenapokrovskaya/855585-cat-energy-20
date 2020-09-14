@@ -1,28 +1,32 @@
 .intro {
   position: relative;
-  color: @basic-white;
   text-align: center;
   padding-top: 27px;
+  color: @basic-white;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 320px;
     height: 305px;
-    background-color: @basic-green;
+    background-color: @special-green;
     background-image: url("../img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
+    background-position: top center;
     z-index: -1;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/index-background-mobile@2x.jpg");
-      background-size: 320px auto;
-    }
+    width: 100%;
   }
 
-  @media (min-width: @tablet-width) {
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .intro {
     position: relative;
     background-image: none;
     color: @basic-black;
@@ -33,17 +37,21 @@
       display: none;
     }
   }
+}
 
-  @media (min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
+  .intro {
     padding-top: 114px;
 
     &::before {
       display: block;
       position: absolute;
       top: -113px;
-      left: 720px;
-      width: 720px;
+      left: 50%;
       height: 696px;
+      background-size: 720px 100%;
+      background-position: left;
+      width: 50%;
       background-image: url("../img/index-background-desktop@1x.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -51,6 +59,23 @@
         background-size: 720px auto;
       }
     }
+  }
+}
+
+.intro__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0 110px;
   }
 }
 
@@ -81,7 +106,7 @@
   line-height: 14px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
@@ -109,21 +134,23 @@
     position: absolute;
     width: 552px;
     height: 499px;
-    top: 30px;
+    top: -80px;
     right: 330px;
   }
 }
 
 .intro__button-choose {
   width: 280px;
+  margin-top: 3px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     width: 244px;
-    top: 290px;
+    top: 230px;
     left: 112px;
     font-size: 20px;
     line-height: 0px;
+    margin-top: 0;
   }
 
   @media (min-width: @desktop-width) {

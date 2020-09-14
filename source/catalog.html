@@ -82,7 +82,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -116,7 +116,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -150,7 +150,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -184,7 +184,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -218,7 +218,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -252,7 +252,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item">
@@ -286,7 +286,7 @@
                 </div>
               </div>
             </div>
-            <button class="button products__button-order" type="button">Заказать</button>
+            <a class="button products__button-order">Заказать</a>
           </article>
         </li>
         <li class="products__item products__item-more">
@@ -298,24 +298,25 @@
               <p class="products-more__description">
                 На самом деле вкусов гораздо больше!
               </p>
-              <button class="products-more__button-show" type="submit">Показать все</button>
+              <a class="products-more__button-show">Показать все</a>
             </div>
           </article>
         </li>
       </ul>
     </section>
-    <section class="additional-products container">
+    <section class="additional-products">
+      <div class="container">
       <div class="additional-products__wrapper">
         <h2 class="additional-products__title">Дополнительные товары</h2>
-        <ul class="additional-products__list">
-          <div class="additional-products__item-wrapper">
+        <div class="additional-products__item-wrapper">
+          <ul class="additional-products__list">
             <li class="additional-products__item">
               <h3 class="additional-products__subtitle">Сахарозаменитель</h3>
               <div class="additional-products__block additional-products__block--1">
                 <p class="additional-products__count">1 упаковка (100 г)</p>
                 <p class="additional-products__price">200 Р</p>
               </div>
-              <button class="button additional-products__button-order" type="button">Заказать</button>
+              <a class="button additional-products__button-order">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__subtitle">Питьевая вода</h3>
@@ -323,7 +324,7 @@
                 <p class="additional-products__count">5 литров</p>
                 <p class="additional-products__price">50 Р</p>
               </div>
-              <button class="button additional-products__button-order" type="button">Заказать</button>
+              <a class="button additional-products__button-order">Заказать</a>
             </li>
             <li class="additional-products__item">
               <h3 class="additional-products__subtitle">Молоко</h3>
@@ -331,7 +332,7 @@
                 <p class="additional-products__count">1 литр</p>
                 <p class="additional-products__price">100 Р</p>
               </div>
-              <button class="button additional-products__button-order" type="button">Заказать</button>
+              <a class="button additional-products__button-order">Заказать</a>
             </li>
             <li class="additional-products__item additional-products__item-last">
               <h3 class="additional-products__subtitle">Витамины</h3>
@@ -339,22 +340,21 @@
                 <p class="additional-products__count">1 упаковка (30 г)</p>
                 <p class="additional-products__price">300 Р</p>
               </div>
-              <button class="button additional-products__button-order" type="button">Заказать</button>
+              <a class="button additional-products__button-order">Заказать</a>
             </li>
+          </ul>
+          <div class="additional-products__order-all order-all">
+            <svg class="order-all__icon" width="78" height="80">
+              <use xlink:href="img/sprite.svg#icon-gift"></use>
+            </svg>
+            <p class="order-all__description">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-          <li class="additional-products__item additional-products__item-order">
-            <div class="additional-products__order-all order-all">
-              <svg class="order-all__icon" width="78" height="80">
-                <use xlink:href="img/sprite.svg#icon-gift"></use>
-              </svg>
-              <p class="order-all__description">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
-          </li>
-        </ul>
+        </div>
       </div>
+    </div>
     </section>
     <section class="contacts">
-      <div class="contacts__block-catalog">
+      <div class="contacts__container contacts__container-catalog">
       <div class="contacts__block container">
         <h2 class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</h2>
         <p class="contacts__description">
