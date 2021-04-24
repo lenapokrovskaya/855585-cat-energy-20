@@ -26,7 +26,7 @@ const styles = () => {
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("build/css"))
+    .pipe(gulp.dest("docs/css"))
     .pipe(sync.stream())
 }
 exports.styles = styles;
@@ -34,7 +34,7 @@ exports.styles = styles;
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(gulp.dest("./build"))
+    .pipe(gulp.dest("./docs"))
     .pipe(sync.stream());
 }
 exports.html = html;
@@ -44,7 +44,7 @@ exports.html = html;
 const server = done => {
   sync.init({
     server: {
-      baseDir: "./build"
+      baseDir: "./docs"
     },
     cors: true,
     notify: false,
@@ -68,7 +68,7 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
     .pipe(svgstore())
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("docs/img"))
 }
 exports.sprite = sprite;
 
@@ -95,7 +95,7 @@ const images = () => {
 }
 exports.images = images;
 
-// Copy in build
+// Copy in docs
 
 const copy = () => {
   return gulp.src([
@@ -107,14 +107,14 @@ const copy = () => {
   ], {
     base: "source"
   })
-  .pipe(gulp.dest("build"))
+  .pipe(gulp.dest("docs"))
 }
 exports.copy = copy;
 
-// clean build
+// clean docs
 
 const clean = () => {
-  return del("build")
+  return del("docs")
 }
 exports.clean = clean;
 

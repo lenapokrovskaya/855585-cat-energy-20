@@ -32,6 +32,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
+
 }
 @media (min-width: 768px) {
   .page-header__wrapper {
@@ -2269,6 +2270,12 @@ img {
   text-transform: uppercase;
 }
 .form__input:hover {
+
+
+
+
+
+
   border: 1px solid #CDCDCD;
 }
 .form__input:active,
@@ -2935,6 +2942,17 @@ img {
   background-color: transparent;
   border: 1px solid #CDCDCD;
 }
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .form__checkbox-input + label::before {
     width: 38px;
